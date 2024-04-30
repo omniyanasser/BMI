@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BMI</title>
+  <!-- Google Font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&family=Tac+One&display=swap" rel="stylesheet">
+  <!-- Google Font  -->
+  <!-- wow css  -->
+  <link rel="stylesheet" href="css/wow.css" />
+  <!-- animate css  -->
+  <link rel="stylesheet" href="css/animate.min.css" />
+  <!-- fontawesome css  -->
+  <link rel="stylesheet" href="css/all.min.css" />
+  <!-- bootstrap css  -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- mdbootstrap css  -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- style css  -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <div class="container col-10 text-center my-4">
+
+    <h3 class="head">BMI Calculator</h3>
+
+    <!-- start sec (gender) -->
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-5">
+
+          <button id="btn1" class="btn-m p-4 rounded-7 mx-4 mt-3 border-0" onclick="changeColor1();"><i
+              class="fa-solid fa-mars mr-2"></i>male</button>
+
+        
+          <button id="btn2" class="btn-f p-4 rounded-7 mx-4 mt-3 border-0" onclick="changeColor2();"><i
+              class="fa-solid fa-venus mr-2"></i>female</i></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- end sec (gender) -->
+
+
+    <form onsubmit="return calc()">
+      <!-- weight input -->
+      <div data-mdb-input-init class="form-outline my-4 col-9 m-auto">
+        <input type="number" id="demo1" class="form-control" />
+        <label class="form-label" for="demo1">Enter your weight in Kg</label>
+      </div>
+
+      <!-- height input -->
+      <div data-mdb-input-init class="form-outline mb-4 col-9 m-auto">
+        <input type="number" id="demo2" class="form-control" />
+        <label class="form-label" for="demo2">Enter your height in Cm</label>
+      </div>
+
+      <!-- 2 column grid layout for inline styling -->
+      <div class="row mb-4">
+        <div class="col d-flex justify-content-center">
+
+          <input type="submit" value="calc" class="btn btn-primary btn-block m-auto col-9">
+        </div>
+
+
+    </form>
+
+    <h3 id="result" class="my-4"></h3>
+    <img id="img" src="" class="format-img m-auto">
+
+  </div>
+
+
+
+  <!-- wow js -->
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <!-- wow js -->
+  <!-- fontawesome js  -->
+  <script src="js/all.min.js"></script>
+  <!-- jquery js  -->
+  <script src="js/jquery.slim.min.js"></script>
+  <!-- popper js  -->
+  <script src="js/popper.min.js"></script>
+  <!-- bootstrap js  -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- mdb js  -->
+  <script src="js/mdb.umd.min.js"></script>
+  <!-- main js  -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
